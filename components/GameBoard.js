@@ -44,14 +44,13 @@ const GameBoard = (props) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
       alignItems: 'center',
     },
     game: {
+      marginTop: 130,
       flexDirection: 'row',
       flexWrap: 'wrap',
-      width: 300,
-      paddingTop: 20,
+      width: 320
     },
     header: {
       fontWeight: 'bold',

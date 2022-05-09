@@ -7,7 +7,7 @@ const Square = (props) => {
     const [moleActive, setMoleActive] = useState(false)
     const [isGameOver, setGameOver] = useState(false)
 
-    const randomTime = Math.random() * 20000
+    const randomTime = Math.random() * 20000 + 1000
     let timerId
 
     useEffect(() => {
@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
         minWidth: 80,
         minHeight: 80,
         margin: 10,
-        backgroundColor: '#9BF89C',
         width: '100%'
     },
     mole: {
@@ -47,14 +46,8 @@ const styles = StyleSheet.create({
         minWidth: 80,
         minHeight: 80,
         margin: 10,
-        backgroundColor: '#9BF89C', 
         width: '100%'
     },
-    x: {
-        fontWeight: 'bold',
-        fontSize: 65,
-        textAlign: 'center',
-    }
 })
 
 const mapStateToProps = state => {
